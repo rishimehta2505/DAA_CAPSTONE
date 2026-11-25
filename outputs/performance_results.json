@@ -1,0 +1,66 @@
+{
+    "methodology": {
+        "repeats": 5,
+        "measurement": "Arithmetic mean measured with time.perf_counter",
+        "random_seed": 42,
+        "note": "Sorting and Knapsack are measured against parcel count. Dijkstra and TSP are measured against graph vertex count. Graph tests use connected, undirected, weighted graphs."
+    },
+    "parcel_algorithms": {
+        "input_sizes": [
+            10,
+            50,
+            100,
+            200,
+            500,
+            1000
+        ],
+        "repeats_per_size": 5,
+        "knapsack_capacity_rule": "max(50, parcel_count * 5)",
+        "sorting_times": [
+            9.498600024926419e-06,
+            5.7051999988289026e-05,
+            0.000133306999987326,
+            0.00030259620000379074,
+            0.0008547226000018782,
+            0.0019475499999998646
+        ],
+        "knapsack_times": [
+            7.630140000856045e-05,
+            0.001408171000002767,
+            0.0066597933999901215,
+            0.029046273599965387,
+            0.20907882420001442,
+            0.7922346496000046
+        ]
+    },
+    "graph_algorithms": {
+        "vertex_counts": [
+            5,
+            10,
+            15,
+            20,
+            30,
+            40,
+            50
+        ],
+        "repeats_per_size": 5,
+        "dijkstra_times": [
+            7.637599992449395e-06,
+            6.161400006021722e-06,
+            9.257799979422998e-06,
+            1.1515400001371744e-05,
+            2.0861400048488577e-05,
+            2.7385400017010397e-05,
+            3.047780000997591e-05
+        ],
+        "tsp_times": [
+            2.3345399995378102e-05,
+            5.9387200008131916e-05,
+            0.000141321000046446,
+            0.000253263399986281,
+            0.0005610015999991447,
+            0.0010590586000034819,
+            0.0016313093999997363
+        ]
+    }
+}
